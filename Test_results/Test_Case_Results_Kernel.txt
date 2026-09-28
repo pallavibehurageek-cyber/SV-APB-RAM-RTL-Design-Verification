@@ -1,0 +1,145 @@
+#SIMULATION RESULTS TO ANALYZE THE FUNCTIONAL CORRECTNESS OF DESIGN(RTL)
+
+time: 2190 ns,  Iteration: 1,  Instance: /tb_top
+
+->Test Case:01
+# KERNEL: [DRV]:RESET DONE
+# KERNEL: [GEN]:oper:error,psel:0,penable:1,pwrite:1,paddr:3,pwdata:2,prdata:0,pready:0,pslverr:0
+# KERNEL: [DRV]:SLV ERROR
+# KERNEL: [MON]:DATA WRITTEN WDATA:2,WADDR:46
+# KERNEL: [SCO]:DATA RCVD pwdata:0,prdata:0,pwrite:1
+# KERNEL: [SCO]:SLAVE ERROR DETECTED!
+# KERNEL: -----------------------------------------------
+->Test Case:02
+# KERNEL: [GEN]:oper:random,psel:1,penable:0,pwrite:0,paddr:4,pwdata:2,prdata:0,pready:0,pslverr:0
+# KERNEL: [MON]:DATA READ RDATA:0,RADDR:4
+# KERNEL: [DRV]:RANDOM OPERATION
+# KERNEL: [SCO]:DATA RCVD pwdata:0,prdata:0,pwrite:0
+# KERNEL: [SCO]:DATA MATCHED
+# KERNEL: -----------------------------------------------
+->Test Case:03
+# KERNEL: [GEN]:oper:read,psel:1,penable:1,pwrite:1,paddr:3,pwdata:6,prdata:0,pready:0,pslverr:0
+# KERNEL: [MON]:DATA READ RDATA:0,RADDR:3
+# KERNEL: [DRV]:DATA READ OP ADDR:3
+# KERNEL: [SCO]:DATA RCVD pwdata:0,prdata:0,pwrite:0
+# KERNEL: [SCO]:DATA MATCHED
+# KERNEL: -----------------------------------------------
+->Test Case:04
+# KERNEL: [GEN]:oper:write,psel:1,penable:0,pwrite:0,paddr:4,pwdata:5,prdata:0,pready:0,pslverr:0
+# KERNEL: [MON]:DATA WRITTEN WDATA:5,WADDR:4
+# KERNEL: [DRV]:DATA WRITE OP DATA:5,ADDRESS:4
+# KERNEL: [SCO]:DATA RCVD pwdata:0,prdata:0,pwrite:1
+# KERNEL: [SCO]:DATA STORED WDATA:0,ADDR:4
+# KERNEL: -----------------------------------------------
+->Test Case:05
+# KERNEL: [GEN]:oper:random,psel:1,penable:0,pwrite:1,paddr:4,pwdata:3,prdata:0,pready:0,pslverr:0
+# KERNEL: [MON]:DATA WRITTEN WDATA:3,WADDR:4
+# KERNEL: [DRV]:RANDOM OPERATION
+# KERNEL: [SCO]:DATA RCVD pwdata:0,prdata:0,pwrite:1
+# KERNEL: [SCO]:DATA STORED WDATA:0,ADDR:4
+# KERNEL: -----------------------------------------------
+->Test Case:06
+# KERNEL: [GEN]:oper:write,psel:1,penable:1,pwrite:1,paddr:4,pwdata:5,prdata:0,pready:0,pslverr:0
+# KERNEL: [MON]:DATA WRITTEN WDATA:5,WADDR:4
+# KERNEL: [DRV]:DATA WRITE OP DATA:5,ADDRESS:4
+# KERNEL: [SCO]:DATA RCVD pwdata:0,prdata:0,pwrite:1
+# KERNEL: [SCO]:DATA STORED WDATA:0,ADDR:4
+# KERNEL: -----------------------------------------------
+->Test Case:07
+# KERNEL: [GEN]:oper:read,psel:1,penable:0,pwrite:1,paddr:3,pwdata:3,prdata:0,pready:0,pslverr:0
+# KERNEL: [MON]:DATA READ RDATA:0,RADDR:3
+# KERNEL: [DRV]:DATA READ OP ADDR:3
+# KERNEL: [SCO]:DATA RCVD pwdata:0,prdata:0,pwrite:0
+# KERNEL: [SCO]:DATA MATCHED
+# KERNEL: -----------------------------------------------
+->Test Case:08
+# KERNEL: [GEN]:oper:error,psel:0,penable:1,pwrite:1,paddr:2,pwdata:9,prdata:0,pready:0,pslverr:0
+# KERNEL: [MON]:DATA WRITTEN WDATA:9,WADDR:53
+# KERNEL: [DRV]:SLV ERROR
+# KERNEL: [SCO]:DATA RCVD pwdata:0,prdata:0,pwrite:1
+# KERNEL: [SCO]:SLAVE ERROR DETECTED!
+# KERNEL: -----------------------------------------------
+->Test Case:09
+# KERNEL: [GEN]:oper:error,psel:1,penable:1,pwrite:0,paddr:2,pwdata:4,prdata:0,pready:0,pslverr:0
+# KERNEL: [MON]:DATA READ RDATA:x,RADDR:94
+# KERNEL: [DRV]:SLV ERROR
+# KERNEL: [SCO]:DATA RCVD pwdata:0,prdata:0,pwrite:0
+# KERNEL: [SCO]:SLAVE ERROR DETECTED!
+# KERNEL: -----------------------------------------------
+->Test Case:10
+# KERNEL: [GEN]:oper:read,psel:0,penable:0,pwrite:0,paddr:2,pwdata:2,prdata:0,pready:0,pslverr:0
+# KERNEL: [MON]:DATA READ RDATA:0,RADDR:2
+# KERNEL: [DRV]:DATA READ OP ADDR:2
+# KERNEL: [SCO]:DATA RCVD pwdata:0,prdata:0,pwrite:0
+# KERNEL: [SCO]:DATA MATCHED
+# KERNEL: -----------------------------------------------
+->Test Case:11
+# KERNEL: [GEN]:oper:write,psel:0,penable:1,pwrite:0,paddr:2,pwdata:5,prdata:0,pready:0,pslverr:0
+# KERNEL: [MON]:DATA WRITTEN WDATA:5,WADDR:2
+# KERNEL: [DRV]:DATA WRITE OP DATA:5,ADDRESS:2
+# KERNEL: [SCO]:DATA RCVD pwdata:0,prdata:0,pwrite:1
+# KERNEL: [SCO]:DATA STORED WDATA:0,ADDR:2
+# KERNEL: -----------------------------------------------
+->Test Case:12
+# KERNEL: [GEN]:oper:random,psel:0,penable:0,pwrite:1,paddr:2,pwdata:3,prdata:0,pready:0,pslverr:0
+# KERNEL: [MON]:DATA WRITTEN WDATA:3,WADDR:2
+# KERNEL: [DRV]:RANDOM OPERATION
+# KERNEL: [SCO]:DATA RCVD pwdata:0,prdata:0,pwrite:1
+# KERNEL: [SCO]:DATA STORED WDATA:0,ADDR:2
+# KERNEL: -----------------------------------------------
+->Test Case:13
+# KERNEL: [GEN]:oper:random,psel:0,penable:0,pwrite:1,paddr:2,pwdata:3,prdata:0,pready:0,pslverr:0
+# KERNEL: [MON]:DATA WRITTEN WDATA:3,WADDR:2
+# KERNEL: [DRV]:RANDOM OPERATION
+# KERNEL: [SCO]:DATA RCVD pwdata:0,prdata:0,pwrite:1
+# KERNEL: [SCO]:DATA STORED WDATA:0,ADDR:2
+# KERNEL: -----------------------------------------------
+->Test Case:14
+# KERNEL: [GEN]:oper:write,psel:0,penable:1,pwrite:0,paddr:2,pwdata:5,prdata:0,pready:0,pslverr:0
+# KERNEL: [MON]:DATA WRITTEN WDATA:5,WADDR:2
+# KERNEL: [DRV]:DATA WRITE OP DATA:5,ADDRESS:2
+# KERNEL: [SCO]:DATA RCVD pwdata:0,prdata:0,pwrite:1
+# KERNEL: [SCO]:DATA STORED WDATA:0,ADDR:2
+# KERNEL: -----------------------------------------------
+->Test Case:15
+# KERNEL: [GEN]:oper:read,psel:0,penable:1,pwrite:0,paddr:4,pwdata:4,prdata:0,pready:0,pslverr:0
+# KERNEL: [MON]:DATA READ RDATA:5,RADDR:4
+# KERNEL: [DRV]:DATA READ OP ADDR:4
+# KERNEL: [SCO]:DATA RCVD pwdata:0,prdata:5,pwrite:0
+# KERNEL: [SCO]:DATA MISMATCHED!
+# KERNEL: -----------------------------------------------
+->Test Case:16
+# KERNEL: [GEN]:oper:error,psel:1,penable:1,pwrite:1,paddr:4,pwdata:4,prdata:0,pready:0,pslverr:0
+# KERNEL: [MON]:DATA WRITTEN WDATA:4,WADDR:51
+# KERNEL: [DRV]:SLV ERROR
+# KERNEL: [SCO]:DATA RCVD pwdata:0,prdata:5,pwrite:1
+# KERNEL: [SCO]:SLAVE ERROR DETECTED!
+# KERNEL: -----------------------------------------------
+->Test Case:17
+# KERNEL: [GEN]:oper:error,psel:1,penable:1,pwrite:1,paddr:2,pwdata:7,prdata:0,pready:0,pslverr:0
+# KERNEL: [MON]:DATA WRITTEN WDATA:7,WADDR:57
+# KERNEL: [DRV]:SLV ERROR
+# KERNEL: [SCO]:DATA RCVD pwdata:0,prdata:5,pwrite:1
+# KERNEL: [SCO]:SLAVE ERROR DETECTED!
+# KERNEL: -----------------------------------------------
+->Test Case:18
+# KERNEL: [GEN]:oper:write,psel:0,penable:0,pwrite:1,paddr:2,pwdata:4,prdata:0,pready:0,pslverr:0
+# KERNEL: [MON]:DATA WRITTEN WDATA:4,WADDR:2
+# KERNEL: [DRV]:DATA WRITE OP DATA:4,ADDRESS:2
+# KERNEL: [SCO]:DATA RCVD pwdata:0,prdata:5,pwrite:1
+# KERNEL: [SCO]:DATA STORED WDATA:0,ADDR:2
+# KERNEL: -----------------------------------------------
+->Test Case:19
+# KERNEL: [GEN]:oper:random,psel:0,penable:1,pwrite:1,paddr:3,pwdata:8,prdata:0,pready:0,pslverr:0
+# KERNEL: [MON]:DATA WRITTEN WDATA:8,WADDR:3
+# KERNEL: [DRV]:RANDOM OPERATION
+# KERNEL: [SCO]:DATA RCVD pwdata:0,prdata:5,pwrite:1
+# KERNEL: [SCO]:DATA STORED WDATA:0,ADDR:3
+# KERNEL: -----------------------------------------------
+->Test Case:20
+# KERNEL: [GEN]:oper:read,psel:0,penable:0,pwrite:0,paddr:2,pwdata:4,prdata:0,pready:0,pslverr:0
+# KERNEL: [MON]:DATA READ RDATA:4,RADDR:2
+# KERNEL: [DRV]:DATA READ OP ADDR:2
+# KERNEL: [SCO]:DATA RCVD pwdata:0,prdata:4,pwrite:0
+# KERNEL: [SCO]:DATA MISMATCHED!
+# KERNEL: -----------------------------------------------
