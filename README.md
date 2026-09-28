@@ -181,11 +181,6 @@ MAX 10 Target
 
 This gives the project exposure beyond simulation and connects RTL development with practical FPGA implementation.
 
----
-
-🗂️ Repository Structure
-
-
 
 ---
 
