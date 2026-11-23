@@ -1,10 +1,12 @@
-APB RAM – SystemVerilog Design & Verification
+# APB RAM — SystemVerilog RTL Design & Verification
+
+> **Project status: In progress.** The RTL and modular SystemVerilog testbench are being developed and debugged. Scoreboard refinement and functional validation remain ongoing; this README does not claim completed verification sign-off.
 
 📘 Project Overview
 
 This project implements a RAM-based peripheral using the AMBA Advanced Peripheral Bus (APB) and develops a SystemVerilog verification environment to evaluate its functional behavior.
 
-The work covers the complete flow from RTL design and testbench development to simulation, result analysis, and FPGA-oriented synthesis.
+The project focuses on APB RTL design, transaction-level testbench development, simulation debug and an FPGA-oriented synthesis workflow. Functional validation and scoreboard refinement are still in progress.
 
 The verification environment is organized around reusable components for generating transactions, driving the APB interface, monitoring activity, and checking the design response.
 
@@ -163,7 +165,7 @@ The project documentation identifies Aldec Riviera Pro 2022.04 as the simulation
 
 ⚙️ Synthesis Flow
 
-After functional verification, the RTL design is taken through a synthesis stage using Intel Quartus Prime, with a MAX 10 FPGA selected as the target device in the original project workflow.
+The documented workflow targets Intel Quartus Prime with a MAX 10 FPGA. Because functional validation is still in progress, this synthesis flow should not be interpreted as completed verification sign-off or a validated FPGA deployment.
 
 The overall flow is:
 
